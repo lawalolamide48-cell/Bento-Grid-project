@@ -1,14 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-        <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Social Media AI</title>
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500&display=swap" rel="stylesheet">
+
+  <!-- Tailwind -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            dm: ['DM Sans','sans-serif']
+          },
+          colors:{
+            purple100:"hsl(254,88%,90%)",
+            purple500:"hsl(256,67%,59%)",
+            yellow100:"hsl(31,66%,93%)",
+            yellow500:"hsl(39,100%,71%)",
+            blacksoft:"hsl(0,0%,7%)"
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
-<div>
-    <img src="image.jpg" alt="Description">
+
+<body class="bg-gray-100 font-dm text-[18px] text-blacksoft p-6">
+
+  <!-- MAIN GRID -->
+  <div class="max-w-[1440px] mx-auto grid gap-6 grid-cols-1 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-4">
+
+    <!-- HERO CARD -->
+    <div class="bg-purple500 text-white rounded-xl p-8 flex flex-col justify-center lg:col-span-2">
+      <h1 class="text-4xl font-medium leading-tight">
+        Social Media <span class="text-yellow500 font-bold">10x</span>
+        <span class="italic font-bold">Faster</span> with AI
+      </h1>
+      <div class="text-yellow500 text-2xl mt-6 font-bold">★★★★★</div>
+      <p class="opacity-80 mt-2 font-bold">Over 4,000 5-star reviews</p>
+    </div>
+
+<!-- MANAGE ACCOUNTS -->
+<div class="bg-white rounded-xl p-6 flex flex-col justify-between">
+  <!-- Illustration -->
+  <img src="images/illustration-multiple-platforms.webp" class="w-full mb-4" alt="Multiple Platforms Illustration">
+
+  <!-- Bigger, bold headline -->
+  <p class="font-bold text-4xl">
+    Manage multiple accounts and platforms.
+  </p>
 </div>
+
+    <!-- SCHEDULE CONSISTENT -->
+    <div class="bg-yellow500 rounded-xl p-6">
+      <h2 class="text-3xl font-bold">Maintain a consistent posting schedule.</h2>
+      <img src="images/illustration-consistent-schedule.webp" class="mt-6 w-full">
+    </div>
+
+    <!-- BEST TIME POST -->
+    <div class="bg-purple100 rounded-xl p-6 flex flex-col justify-between lg:row-span-2">
+      <h2 class="text-3xl font-bold">Schedule to social media.</h2>
+      <img src="images/illustration-schedule-posts.webp" class="w-full">
+      <p class="text-sm font-bold">Optimize post timings to publish content at the perfect time for your audience.</p>
+    </div>
+
+    <!-- GROW FOLLOWERS -->
+    <div class="bg-purple500 text-white rounded-xl p-6 flex items-center gap-6 lg:col-span-2">
+      <img src="images/illustration-grow-followers.webp" class="w-40">
+      <h2 class="text-2xl font-bold">Grow followers with non-stop content.</h2>
+    </div>
+
+    <!-- 56% -->
+    <div class="bg-white rounded-xl p-6 text-center flex flex-col justify-center">
+      <img src="images/illustration-audience-growth.webp" class="w-24 mx-auto mb-4">
+      <h2 class="text-4xl font-bold">&gt;56%</h2>
+      <p class="mt-2 font-bold">faster audience growth</p>
+    </div>
+
+    <!-- CREATE POST -->
+<div class="bg-yellow100 rounded-xl p-6 flex flex-col justify-between lg:row-span-2">
+  
+    <h1 class="text-5xl font-bold">
+    Create and schedule content <span class="italic text-purple500 font-bold">quicker.</span>
+  </h1>
+
+  <!-- Call-to-action button -->
+  <button class="bg-yellow500 px-6 py-3 rounded-full font-bold w-fit mt-6"></button>
+
+  <img src="images/illustration-create-post.webp" class="w-full mt-6" alt="Create Post Illustration">
+</div>
+
+
+    <!-- AI CONTENT -->
+    <div class="bg-yellow500 rounded-xl p-6 flex flex-col justify-between lg:row-span-2">
+      <h2 class="text-5xl font-bold">Write your content using AI.</h2>
+      <img src="images/illustration-ai-content.webp" class="w-full">
+    </div>
+
+  </div>
 </body>
 </html>
